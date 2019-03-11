@@ -1,0 +1,103 @@
+.alignleft {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0px 20px 20px;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto 20px;
+}
+
+blockquote {
+	
+	margin: 30px;
+	background: rgba(0, 0, 0, 0.02);
+	padding: 26px;
+	.em;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+	
+	p {
+	
+		font-size: 14px !important;
+		line-height: 20px !important;
+		
+		&:last-of-type{
+			
+			margin-bottom: 0 !important;
+			
+		}//last
+		
+	}//p
+	
+}//blockquote
+
+div.wp-caption {
+	
+	background: rgba(0, 0, 0, 0.02);
+	padding: 6px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+	max-width: 100%;
+	
+	a{
+		
+		margin-bottom: 6px;
+		display: block;
+		text-align: center;
+		
+	}//a
+	
+	p{
+	
+		font-size: 12px !important;
+		.em;
+		line-height: 18px !important;
+		text-align: center;
+		
+		&:last-of-type{
+			
+			margin-bottom: 0 !important;
+			
+		}//last
+		
+	}//p
+	
+}//div.wp-caption
+
+/* ARTICLE */
+
+article { 
+
+	h2, h3, h4, h5 { margin-bottom: 20px; }
+	
+	p { 
+		margin-bottom: 20px;
+		line-height: 145%;
+		font-size: 16px;
+	}
+	
+	ul, ol { 
+		margin: 20px 0 20px 60px; 
+	}
+	
+	ul { 
+		list-style: disc;
+	}
+	
+	ol { 
+		list-style: decimal;
+	}
+	
+	li {
+		list-style-position:inside;
+	}
+	
+	.gform_wrapper {
+		width: 90%;
+		margin: auto;
+	}
+}
