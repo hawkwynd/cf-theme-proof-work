@@ -37,6 +37,7 @@
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/boilerplate.css">
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 	<?php wp_head(); ?>
 
@@ -50,11 +51,10 @@
 <body <?php body_class(); ?>>
 <header class="group">
 	<div class="top-info group">
-		<div class="social-container group"><?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('header-socials') ) ?></div>
-		<div class="phone group"><a href="tel:555-555-5555">For Franchise Info, Call 555-555-5555</a></div>
+		<div class="cf-phone-container">For Franchise Information <a href="tel:555-555-5555">Call Us 555-555-5555</a> </div>
 	</div>
 	<div class="logo">
-		<a href="<?php bloginfo('url');?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-main.png"></a>
+		<a href="<?php bloginfo('url');?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/CF-Logo.png"></a>
 	</div>
     <nav class="group">
 		<?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
