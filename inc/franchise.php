@@ -178,7 +178,7 @@ function dbdb_prev_page_link($place) {
             $prev = 'previous-step-bottom';
         }
 
-        $output .= '<div class="previous-step"><a href="' . get_page_link($prev_page_id) . '" class="button ' . $prev . '"> &lt; Prev</a></div>';
+        $output .= '<div class="previous-step"><a href="' . get_page_link($prev_page_id) . '" class="button ' . $prev . '"> &lt; Previous</a></div>';
 
 
 
@@ -224,11 +224,11 @@ function dbdb_next_page_link($place) {
 
     if( '' != $next_page_id ) {
 
-        $output .= '<div class="next-step"><a href="' . get_page_link($next_page_id) . '" class="button ' . $next . '">Next &gt;</a></div>';
+        $output .= '<div class="next-step"><a href="' . get_page_link($next_page_id) . '" class="button ' . $next . '">Next Step &gt;</a></div>';
 
     } else { 
 
-		$output .='<div class="next-step"><a href="/request-franchise-information" class="button ' . $next . '">Next &gt;</a></div>';
+		$output .='<div class="next-step"><a href="/request-franchise-information" class="button ' . $next . '">Next Step &gt;</a></div>';
 
 	}
 

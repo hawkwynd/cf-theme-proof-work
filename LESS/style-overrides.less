@@ -2,6 +2,8 @@
  -------- Style Overrides Scott Fleming  --------
 */
 
+@import "settings";
+
 header {
   box-shadow: none !important;
 }
@@ -20,7 +22,7 @@ header {
 }
 
 .top-info .cf-phone-container{
-  color: #fff;
+  color: @white;
   text-transform: uppercase;
   font-weight: 300;
   text-align: right;
@@ -28,7 +30,7 @@ header {
 }
 
 .top-info .cf-phone-container a{
-  color: #fff;
+  color: @white;
   text-decoration: none;
   background-color: #527082;
   padding: 0 16px;
@@ -73,60 +75,89 @@ section .page-wrapper{
   padding: 12px 0;
 
 }
-.franchise-info  h2{
+
+.franchise-info h2 {
+  text-align:center;
+  margin-bottom:0;
   text-transform: uppercase;
-  color: #455d6cad;
-  font-size: 14px;
+  color: @bluh2ad;
   font-weight: 550;
+  line-height: 40px;
+  letter-spacing: 3px;
+
+
 }
 
 .franchise-info h3{
-  border: 1px solid #455d6cad;
-  padding: 4px;
+  border: 2px solid @bluh2ad;
+  padding: 6px;
 }
 
 .franchise-info h3 a{
-  color: #455d6cad;
+  color: @bluh2ad;
   text-transform: uppercase;
-  color: #455d6cad;
+  color: @bluh2ad;
   font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 3px;
+  font-weight: 600;
+  letter-spacing: 4px;
 }
 
 i.fa.fa-phone{
-  color: #455d6cad;
+  color: @bluh2ad;
   font-size: 20px;
-  padding-right: 4px;
+  padding-right: 9px;
 }
 
-.request-information-form {
-  color: #527082;
+/* ------- side-menu ------*/
+
+.side-menu ul li a:hover,
+.side-menu ul li.current_page_item a {
+  background: @selected_backgrnd_li;
+  color: @selected_text_li;
+}
+
+.side-menu .widget-title {
+  background-color: @bluh2ad;
+  color: @white;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+
+// special handler just for the custom side form on main page
+.request-information-form, .request-information-form .gform_widget{
+  color: @bluh2ad;
   background-color: #ecf2f5;
   padding: 0;
 
  .widget-title{
     color: white;
-    background-color: #527082;
+    background-color: @bluh2ad;
     text-transform: uppercase;
     padding:20px;
    font-size: 18px;
-   letter-spacing: 8px;
+   letter-spacing: 6px;
   }
 }
+
 .gform_body{
   padding: 30px 30px 0 30px;
 }
 
 .gform_wrapper .gform_footer{
-  padding: 0 0 27px 0 !important;
-  margin: 8px 0 0 !important;
-  clear: both !important;
-  width: 100% !important;
+  padding: 0 0 27px 0;
+  margin: 8px 0 0;
+  clear: both ;
+  width: 100%;
 }
 
 #gform_submit_button_3 {
-
   font-size: 1em !important;
   margin: 0 32px !important;
   letter-spacing: 3px;
@@ -134,7 +165,7 @@ i.fa.fa-phone{
 }
 
 aside .button{
-  background-color: #527082 !important;
+  background-color: @bluh2ad !important;
   font-weight: 300;
 
 }
@@ -143,6 +174,7 @@ h2.home-h2{
   text-transform: uppercase;
   font-weight: 500;
   color: #475c6d;
+  letter-spacing: 3px;
 }
 
 p.home-subline{
@@ -160,9 +192,9 @@ article p{
   font-weight: 400;
 }
 
-.post .learn_more_link, .group-container .learn_more_link{
+.learn_more_link{
   padding: 8px 30px;
-  background-color: #527082;
+  background-color: @bluh2ad;
   width: fit-content;
   text-align: center;
 
@@ -180,6 +212,7 @@ article p{
   }
 
 }
+
 
 .group-container .learn_more_link{
   margin: auto;
@@ -234,7 +267,7 @@ article p{
   .type1 {
     width: 150px;
     height: 150px;
-    background-color: #527082;
+    background-color: @bluh2ad;
     margin: 25px auto;
 
     img{
@@ -246,7 +279,6 @@ article p{
 }
 
 /* --------- video container --------*/
-
 .video-container{
   width: 100%;
   margin: 30px 15%;
@@ -254,7 +286,7 @@ article p{
 
 .talk-banner{
   text-align: center;
-  background-color:  #527082;
+  background-color:  @bluh2ad;
   padding: 30px 0;
   color: white;
   text-transform: uppercase;
@@ -263,7 +295,32 @@ article p{
   margin: 100px 0;
 }
 
-.talk-banner h2 span{
+.research-talk-banner h2{
+  font-size: 26px;
+  text-align: center;
+  background-color: @research_talk-banner_bkgnd;
+  padding: 30px 0;
+  color: @research_talk-banner_text;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+  span{
+    border: 1px solid @research_talk-banner_text;
+    padding: 4px;
+    margin: 0 14px;
+
+    a{
+      color: @research_talk-banner_text;
+      text-decoration: none;
+
+    }
+  }
+}
+
+
+.talk-banner h2 {
+  font-size: 26px;
+span{
 border: 1px solid #92b5c6;
   padding: 4px;
   margin: 0 14px;
@@ -273,4 +330,323 @@ border: 1px solid #92b5c6;
     text-decoration: none;
 
   }
+ }
+}
+
+/*---- Split a div in half side/side ---*/
+
+.dual-wrapper{
+  margin: 0 40px;
+}
+
+.left-block{
+  display: inline-block;
+  width: 45%;
+  margin-right: 30px;
+
+  h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #475c6d;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 16px;
+    letter-spacing: 3px;
+
+  }
+
+  ul {
+    padding: 0 1em;
+    list-style: none;
+  }
+  li:before {
+    content: "";
+    border-color: transparent #475c6d;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+  }
+
+}
+
+.right-block{
+  display: inline-block;
+  width: 45%;
+  margin-left: 30px;
+  vertical-align: top;
+}
+
+section#franchisee-quotes ul li {
+  width:48%;
+  padding:20px;
+  background-color: #6c899a;
+  margin-bottom:20px;
+}
+
+
+/* -------- form overrides ----*/
+
+section#req-form {
+  display:block;
+  width:100%;
+  background: #6c899a url(../img/CF-Franchise-Information-Report.png) no-repeat scroll 100% 120px / auto 63%;
+  padding:80px 80px;
+  color:@white;
+}
+
+section#req-form h3.gform_title {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 44px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+section#req-form span.gform_description {
+  text-align:left;
+}
+
+section#req-form .darkform form{
+  background-color: #6c899a;
+
+  .gform_heading h3.gform_title,
+ .gform_heading .gform_description{
+   padding: 0 30px 0 30px;
+    color: @white;
+  }
+
+  .gform_heading h3.gform_title{
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .gform_heading{
+    margin-bottom: 0;
+  }
+  .gform_body , .gform_footer{
+    padding: 0 30px 0 30px;
+  }
+
+}
+
+section#req-form .gform_wrapper .gform_button {
+  background-color: #8cb9d4;
+  border: medium none;
+  color: @white;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* FOOTER BLOG */
+section#featured-posts {
+  padding:80px 40px;
+  text-align: center;
+}
+
+section#featured-posts h2 {
+  color: #475c6d;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 44px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  word-spacing: 4px;
+  letter-spacing: 3px;
+}
+section#featured-posts ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+section#featured-posts ul li {
+  width:28%;
+  padding:20px;
+}
+
+section#featured-posts .featured-title{
+  font-size: 18px;
+
+}
+
+section#featured-posts .featured-title a {
+  display:block;
+  color: @dkgrey;
+  margin:20px 0;
+  text-decoration:none;
+  font-weight:700;
+}
+
+section#featured-posts .featured-title a:hover {
+  color:#a9a9a9;
+}
+
+section#featured-posts img{
+  max-width: 100%;
+  height: 250px !important;
+}
+
+section#featured-posts .col-container .group-container{
+  width: 30%;
+}
+
+/* ------ footer overrides -------*/
+
+footer {
+  background: @footer_background;
+  color: @white;
+  padding: 30px 0 0;
+  position: relative;
+}
+
+footer .footer-wrap .footer-title {
+  text-transform:uppercase;
+  font-size:24px;
+  font-weight:700;
+  color: @footer_header_title;
+}
+
+
+footer .footer-bottom {
+  padding:20px 40px;
+  background-color: @footer_bottom_bkgrnd;
+}
+
+
+footer .footer-wrap .widget-container ul li {
+  padding: 0;
+}
+
+.footer-wrap {
+  ul {
+    padding: 0 1em;
+    list-style: none;
+  }
+  li:before {
+    content: "";
+    border-color: transparent #475c6d;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -.7em;
+    top: 1.1em;
+    position: relative;
+  }
+
+  h2{
+    color: @footer_h2;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+}
+
+.footer-phone{
+  text-align: center;
+  background-color:  @bluh2ad;
+  padding: 10px 0;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+  width: auto;
+  margin: 11px 20px 50px;
+
+  i.fa.fa-phone{
+    color: white;
+  }
+
+}
+
+footer .footer-wrap .widget-container {
+  width:32%;
+  padding: 0 25px;
+}
+
+footer .footer-wrap .widget-container img {
+  margin-bottom:20px;
+  margin-top: 40px;
+}
+
+
+.copyrite,
+.copyrite a {
+  font-weight:700;
+  text-align:center;
+  text-transform:uppercase;
+  text-decoration:none;
+  font-size:14px;
+  color:@white;
+}
+
+.copyrite a.bluetel{
+  color: @bluh2ad;
+  text-decoration: none;
+}
+.copyrite a.bluetel:hover{
+  color: @white;
+ }
+
+.disclaimer {
+  font-size:12px;
+  font-weight:normal;
+  line-height:16px;
+  padding:20px 0;
+  text-transform:none;
+  text-align:center;
+}
+
+/* ---------- Header Nav Research ----------*/
+.header-nav.research {
+  background:#fff url(../img/Jeanne-Hessen_Dressing-Room.jpg) no-repeat scroll center / cover;
+  margin-bottom:40px;
+  opacity: .5;
+  height: 300px;
+}
+
+/* RESEARCH FUNNEL */
+.bottom-nav {
+  text-align: right;
+  padding-bottom: 40px;
+}
+
+.bottom-nav div {
+  display: inline-block;
+  padding: 8px 30px;
+  background-color: @bluh2ad;
+  width: fit-content;
+}
+
+.bottom-nav a {
+  text-transform: uppercase;
+  color: @white;
+  text-decoration: none;
+  display: inline-block;
+  font-weight:700;
+  font-size:18px;
+}
+.bottom-nav a:hover {
+  color: #525252;
+  cursor: pointer;
+}
+.bottom-nav a:nth-child(2) {
+  border-left: 1px solid #a9a9a9;
+  padding-left: 20px;
+}
+
+.previous-step, next-step{
+  margin: 0 20px;
 }
