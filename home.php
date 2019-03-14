@@ -174,6 +174,7 @@
 <section id="featured-posts">
 	<div class="wrapper group">
 		<h2>Recent Franchise Articles</h2>
+        <p>Lorem ipsum dolor sit amet, vel at brute aeque epicuri Lorem ipsum dolor sit amet</p>
         <div class="col-container">
             <?php
 						// WP_Query arguments -- order by post title ascending order

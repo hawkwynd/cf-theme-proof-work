@@ -345,6 +345,7 @@ footer .footer-wrap {
   flex-flow: row wrap;
   justify-content: space-around;
   position: relative;
+  margin-top: 30px;
 }
 footer .footer-wrap .widget-container ul {
   margin: 10px 0 10px 5px;
@@ -718,7 +719,6 @@ article h5 {
 article p,
 section p {
   margin-bottom: 20px;
-  /* line-height: 145%; */
   font-size: 16px;
   font-weight: 300;
 }
@@ -1118,13 +1118,15 @@ header {
   font-weight: 300;
   text-align: right;
   margin-right: 26px;
+  letter-spacing: 3px;
+  word-spacing: 4px;
 }
 .top-info .cf-phone-container a {
   color: #fff;
   text-decoration: none;
   background-color: #527082;
   padding: 0 16px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 /*
 --------- Main Nav Override ---------
@@ -1164,6 +1166,7 @@ section .page-wrapper {
   font-weight: 550;
   line-height: 40px;
   letter-spacing: 3px;
+  font-size: 16px;
 }
 .franchise-info h3 {
   border: 2px solid #527082;
@@ -1294,6 +1297,7 @@ article p {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  margin-top: 40px;
 }
 .col-container .group-container {
   width: 32%;
@@ -1356,13 +1360,15 @@ article p {
   font-size: 26px;
 }
 .talk-banner h2 span {
-  border: 1px solid #92b5c6;
-  padding: 4px;
+  border: 2px solid #92b5c6;
+  padding: 1px 10px;
   margin: 0 14px;
 }
 .talk-banner h2 span a {
   color: #92b5c6;
   text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
 }
 /*---- Split a div in half side/side ---*/
 .dual-wrapper {
@@ -1370,8 +1376,8 @@ article p {
 }
 .left-block {
   display: inline-block;
-  width: 45%;
-  margin-right: 30px;
+  width: 40%;
+  margin: 0 90px;
 }
 .left-block h2 {
   text-transform: uppercase;
@@ -1468,8 +1474,8 @@ section#featured-posts h2 {
   color: #475c6d;
   font-size: 26px;
   font-weight: 500;
-  line-height: 44px;
-  margin-bottom: 40px;
+  line-height: 24px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   word-spacing: 4px;
   letter-spacing: 3px;
@@ -1591,6 +1597,7 @@ footer .footer-wrap .widget-container img {
   padding: 20px 0;
   text-transform: none;
   text-align: center;
+  margin: 0 110px;
 }
 /* ---------- Header Nav Research ----------*/
 .header-nav.research {

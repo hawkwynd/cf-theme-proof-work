@@ -92,7 +92,7 @@ a:hover {
 }
 /* TYPOGRAPHY */
 article h1, article h2, article h3, article h4, article h5 {
-  color: #525252;
+  color: @deepgrey;
   margin-bottom:20px;
   font-weight:300;
 }
@@ -118,13 +118,13 @@ div.text-center {
 }
 
 aside .button, #respond #submit {
-  color:#fff;
+  color:@white;
   font-weight:700;
   text-transform:uppercase;
   font-size:18px;
   line-height:18px;
   padding:12px;
-  background-color:#a9a9a9;
+  background-color:@softgrey;
   text-decoration:none;
   display:inline-block;
   border:none;
@@ -134,19 +134,19 @@ aside .button:hover, #respond #submit:hover {
   background-color: #78797a;
 }
 .learn-more {
-  color:#fff;
+  color:@white;
   font-weight:700;
   text-transform:uppercase;
   font-size:18px;
   line-height:18px;
   padding:12px;
-  background-color:#a9a9a9;
+  background-color:@softgrey;
   text-decoration:none;
   display:inline-block;
 }
 .learn-more:hover {
-  background-color: #525252;
-  color:#fff;
+  background-color: @deepgrey;
+  color:@white;
 }
 /* STRUCTURE */
 .wrapper {
@@ -156,7 +156,7 @@ aside .button:hover, #respond #submit:hover {
 .page-wrapper {
   max-width: 1200px;
   margin: 0 auto 40px;
-  background-color: #fff;
+  background-color: @white;
 }
 .content {
   float: left;
@@ -173,7 +173,7 @@ table {
 }
 th {
   background-color: #008653;
-  color: #fff;
+  color: @white;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
@@ -227,8 +227,8 @@ header {
 }
 
 .top-info .phone a {
-  background-color: #525252;
-  color: #fff;
+  background-color: @deepgrey;
+  color: @white;
   line-height: 24px;
   padding: 10px 40px;
   text-decoration: none;
@@ -241,7 +241,7 @@ header {
 }
 
 .top-info .phone a:hover {
-  background-color: #a9a9a9;
+  background-color: @softgrey;
 }
 
 .top-info .phone span{
@@ -295,7 +295,7 @@ nav li:hover ul.sub-menu {
   display: block;
 }
 nav a {
-  color: #525252;
+  color: @deepgrey;
   text-decoration: none;
   display: block;
   padding: 15px;
@@ -305,7 +305,7 @@ nav a {
   font-weight: 300;
 }
 nav ul li:hover > a {
-  color:#a9a9a9;
+  color:@softgrey;
 }
 
 nav ul li.menu-item-has-children > a:after {
@@ -316,7 +316,7 @@ nav ul li.menu-item-has-children > a:after {
 nav .sub-menu {
   display: none;
   position: absolute;
-  background-color: #fff;
+  background-color: @white;
   z-index: 90;
   margin:0;
 }
@@ -324,7 +324,7 @@ nav .sub-menu {
   margin: 0;
   display: block;
   text-align: left;
-  border: 1px solid #525252;
+  border: 1px solid @deepgrey;
 }
 .sub-menu a {
   padding: 10px 15px;
@@ -332,7 +332,7 @@ nav .sub-menu {
   font-weight: 300;
 }
 nav ul li .sub-menu a:hover {
-  background-color: #a9a9a9;
+  background-color: @softgrey;
   color:#ffffff;
 }
 
@@ -356,6 +356,7 @@ footer .footer-wrap {
   flex-flow: row wrap;
   justify-content: space-around;
   position:relative;
+  margin-top: 30px;
 }
 
 
@@ -368,12 +369,12 @@ footer .footer-wrap .widget-container ul {
 
 footer .footer-wrap .widget-container a {
   text-decoration:none;
-  color:#fff;
+  color:@white;
   padding:2px;
 }
 
 footer .footer-wrap .widget-container a:hover {
-  background-color:#a9a9a9;
+  background-color:@softgrey;
 }
 
 footer .simple-social-icons {
@@ -393,7 +394,7 @@ footer .simple-social-icons {
   font-weight: 400;
   line-height: 44px;
   margin-bottom: 0;
-  color:#525252;
+  color:@deepgrey;
   padding:80px 0;
   text-align:center;
   text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.75);
@@ -406,7 +407,7 @@ footer .simple-social-icons {
 .header-nav .research-nav .button {
   font-size: 18px;
   text-transform: uppercase;
-  color: #fff;
+  color: @white;
   text-decoration: none;
   border-bottom: 0;
   padding-top: 2px;
@@ -522,11 +523,11 @@ h2.post-title {
 }
 h2.post-title a {
   text-decoration: none;
-  color:#525252;
+  color:@deepgrey;
   font-weight:bold;
 }
 h2.post-title a:hover {
-  color: #a9a9a9;
+  color: @softgrey;
 }
 .blog-small h2.post-title {
   font-size: 1.1em;
@@ -539,7 +540,7 @@ h2.post-title a:hover {
   text-align:center;
   font-size:26px;
   line-height:30px;
-  color:#fff;
+  color:@white;
   font-weight:300;
 }
 .widget-container {
@@ -552,12 +553,12 @@ h2.post-title a:hover {
 }
 .navigation .wp-paginate a {
   background-color: #008653;
-  color: #fff;
+  color: @white;
   border: 0;
 }
 .navigation .wp-paginate a:hover {
   background-color: #222;
-  color: #fff;
+  color: @white;
 }
 .navigation .wp-paginate .current {
   background-color: #014d2f;
@@ -746,7 +747,6 @@ article h2, article h3, article h4, article h5 {
 article p,
 section p {
   margin-bottom: 20px;
-  /* line-height: 145%; */
   font-size: 16px;
   font-weight:300;
 }
@@ -774,7 +774,7 @@ article img {
   position: relative !important;
   text-decoration: none !important;
   text-indent: 0 !important;
-  color:#a9a9a9;
+  color:@softgrey;
 }
 
 .post ul.related_post li a:hover {
@@ -809,7 +809,7 @@ body {
 .royal-container .royal-content p.larger {
   font-size:40px;
   line-height:46px;
-  color:#fff;
+  color:@white;
   font-weight:400;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   margin-bottom:40px;
@@ -822,17 +822,17 @@ body {
 }
 
 .royal-container .royal-content .learn-more {
-  color:#fff;
+  color:@white;
   font-weight:700;
   text-transform:uppercase;
   font-size:22px;
   line-height:22px;
-  background-color:#525252;
+  background-color:@deepgrey;
   text-decoration:none;
-  border:2px solid #fff;
+  border:2px solid @white;
 }
 .royal-container .royal-content .learn-more:hover {
-  background-color: #a9a9a9;
+  background-color: @softgrey;
 }
 
 /* GRAVITY FORMS */
@@ -875,20 +875,20 @@ body {
   text-transform:uppercase;
 }
 .gform_widget .gform_wrapper .gfield_required {
-  color: #fff;
+  color: @white;
 }
 .gform_widget .gform_wrapper .validation_error {
-  color: #fff;
+  color: @white;
 }
 .gform_widget .gform_wrapper .gfield_error {
   background-color: #009059 !important;
   border: 0 !important;
 }
 .gform_widget .gform_wrapper .gfield_error .gfield_label {
-  color: #fff;
+  color: @white;
 }
 .gform_widget .gform_wrapper .validation_message, .gform_widget .gform_wrapper li.gfield_error div.ginput_complex.ginput_container label {
-  color: #fff;
+  color: @white;
 }
 .gform_widget .gform_wrapper textarea {
   height: 90px;
@@ -918,7 +918,7 @@ section#costs-fees {
 section#costs-fees .split-right {
   float:right;
   width:50%;
-  color:#fff;
+  color:@white;
 }
 
 section#costs-fees .split-right h2 {
@@ -940,7 +940,7 @@ section#costs-fees .split-right ul {
 }
 
 section#costs-fees .split-right ul li {
-  color:#fff;
+  color:@white;
   font-weight:700;
   margin-bottom:10px;
 }
@@ -949,7 +949,7 @@ section#costs-fees .split-right ul li:before {
   font-family: 'FontAwesome';
   content: '\f061';
   margin:0 5px 0 -15px;
-  color: #fff;
+  color: @white;
 }
 
 section#costs-fees .split-right ul li span {
@@ -970,7 +970,7 @@ section#benefits-list h3 {
   line-height: 44px;
   margin-bottom: 20px;
   text-align:center;
-  color:#525252;
+  color:@deepgrey;
 }
 
 section#benefits-list h3 {
@@ -1005,9 +1005,9 @@ section#benefits-list ul li {
 section#franchisee-quotes {
   display:block;
   width:100%;
-  background-color:#525252;
+  background-color:@deepgrey;
   padding:80px 40px;
-  color:#fff;
+  color:@white;
 }
 
 section#franchisee-quotes h2 {
@@ -1055,21 +1055,21 @@ section#req-form span.gform_description {
 section#req-form .gform_wrapper .top_label .gfield_label {
   font-weight:300;
   text-transform:uppercase;
-  color:#fff;
+  color:@white;
 }
 
 section#req-form .gform_wrapper .gform_button:hover {
-  background-color: #525252;
+  background-color: @deepgrey;
 }
 
 /* SIDEBAR - FRANCHISE INFO */
 
 .widget-container.franchise-info {
   margin-bottom:20px;
-  background-color: #fff;
+  background-color: @white;
 }
 .franchise-info .round-wrap {
-  border:1px solid #a9a9a9;
+  border:1px solid @softgrey;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
@@ -1078,7 +1078,7 @@ section#req-form .gform_wrapper .gform_button:hover {
 
 
 .franchise-info h3, .franchise-info h3 a {
-  color: #a9a9a9;
+  color: @softgrey;
   line-height: 30px;
   text-decoration: none;
   font-size: 26px;
@@ -1089,8 +1089,8 @@ section#req-form .gform_wrapper .gform_button:hover {
 
 .side-menu {
   background: @bluh2ad none repeat scroll 0 0;
-  border: 2px solid #a9a9a9;
-  color: #fff;
+  border: 2px solid @softgrey;
+  color: @white;
   padding:20px 0;
 }
 
@@ -1107,7 +1107,7 @@ section#req-form .gform_wrapper .gform_button:hover {
 }
 
 .side-menu ul li a {
-  color:#fff;
+  color:@white;
   padding:4px 20px;
   text-decoration:none;
   display:block;
