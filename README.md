@@ -10,6 +10,6 @@ This project is located at [http://closfactfran.wpengine.com/](http://closfactfr
 
 
 ### What I would do differently
-In the `home.php` template, I would have created posts with a defined category in wordpress to populate the section with the blue balls and links to the posts themselves instead of hard-coding that section.
+In the [home.php](https://github.com/hawkwynd/cf-theme-proof-work/blob/master/home.php) template, I would have created posts with a defined category in wordpress to populate the section with the blue balls and links to the posts themselves instead of hard-coding that section.
 
 
