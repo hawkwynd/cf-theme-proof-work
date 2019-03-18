@@ -1377,7 +1377,7 @@ article p {
 .left-block {
   display: inline-block;
   width: 40%;
-  margin: 0 90px;
+  margin: 0 0 0 90px;
 }
 .left-block h2 {
   text-transform: uppercase;
