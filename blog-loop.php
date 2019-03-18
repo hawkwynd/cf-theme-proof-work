@@ -23,22 +23,15 @@
 ?>
 		
 <div class="<?=$class;?> group">
-
 	<div class="blog-image">
-		
 		<a href="<?php the_permalink();?>">
-				
-			<?php 
+        <?php
 			
 			if ((function_exists('has_post_thumbnail')) && (has_post_thumbnail())) {
-			
 			the_post_thumbnail('blog-featured');
-			
-			} else { ?> 
-						
-			
+			} else { ?>
+			    <!-- nothing else matters -->
 			<?php }?>
-		
 		</a>
 		
 	</div>
@@ -47,7 +40,9 @@
 	
 		<div class="time">On <?php the_time('F jS, Y') ?></div>
 			
-		<h2 class="post-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+		<h2 class="home-h2">
+            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+        </h2>
 				
 		<?php
 			
@@ -84,9 +79,9 @@
 				<?php wpe_excerpt('wpe_excerptlength_small', 'wpe_excerptmore'); ?>
 				
 			<?php endif; ?>
-				
-			<a class="learn-more" href="<?php the_permalink();?>">read more</a> 
-		
+		    <div class="learn_more_link">
+			<a  href="<?php the_permalink();?>">read more</a>
+            </div>
 	</div>		         
 		
 </div> 
