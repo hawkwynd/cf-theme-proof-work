@@ -39,7 +39,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
     <script src="https://use.fontawesome.com/3b7c5bf0d5.js"></script>
 
-
 	<?php wp_head(); ?>
 
 	<!-- All JavaScript at the bottom, except this Modernizr build. Modernizr enables HTML5 elements & feature detects for optimal performance. Create your own custom Modernizr build: www.modernizr.com/download/ -->

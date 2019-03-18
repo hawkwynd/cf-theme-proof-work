@@ -1,5 +1,10 @@
-<?php //Template Name: Research ?>
-<?php get_header(); ?>
+<?php
+
+// Template Name: Research
+
+ get_header();
+
+?>
 
 <section class="header-nav research">
 	<div class="wrapper group">
@@ -23,6 +28,9 @@
 
 		<div class="group bottom-nav" id="learn_more_link"><?php echo dbdb_prev_page_link(); ?><?php echo dbdb_next_page_link(); ?></div>
 	</div>
+
+    <!-- aside class=group starts -->
+
 	<aside class="group">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-research') ) ?>
 		</aside>
