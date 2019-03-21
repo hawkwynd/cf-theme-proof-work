@@ -1,0 +1,88 @@
+
+/*
+  GRAVITY FORMS STYLES
+*/
+
+.gform_wrapper {
+  form {
+    padding-bottom: 20px;
+    font-weight: normal;
+  }
+  .gfield_required {
+    color: #fff !important;
+  }
+}
+
+.gform_widget {
+  .widget-title {
+    margin: 0;
+    text-align: center;
+    background-color: #527082;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 22px;
+    font-family: "Helvetica-Bold";
+    letter-spacing: 4px;
+  }
+  .gform_wrapper {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.gform_wrapper span.gform_description {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.gform_widget .gform_wrapper {
+  .gfield {
+    width: 100% !important;
+    clear: both !important;
+    float: none !important;
+  }
+  .gfield_label {
+    font-size: 14px !important;
+    line-height: 16px !important;
+    padding: 0 !important;
+    text-transform: uppercase;
+    font-weight: normal !important;
+  }
+  .gfield_required, .validation_error {
+    color: #527082;
+  }
+  .gfield_error {
+    background-color: #009059 !important;
+    border: 0 !important;
+    .gfield_label {
+      color: #fff;
+    }
+  }
+  .validation_message, li.gfield_error div.ginput_complex.ginput_container label {
+    color: #fff;
+  }
+  textarea {
+    height: 90px;
+  }
+  .ginput_complex.ginput_container.has_first_name.has_last_name span {
+    width: 100%;
+  }
+}
+
+.gform_wrapper .ginput_complex.ginput_container {
+  &.has_first_name {
+    &.has_middle_name.no_last_name span, &.no_middle_name.has_last_name span {
+      width: 100%;
+    }
+  }
+  &.no_first_name.has_middle_name.has_last_name span {
+    width: 100%;
+  }
+}
+
+aside div.ginput_container_name span {
+  padding-right: 0;
+}

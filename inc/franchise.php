@@ -139,13 +139,9 @@ function relative_value_array($array, $current_val = '', $offset = 1) {
 
 // previous page link function
 
-
-
 function dbdb_prev_page_link($place) {
 
     global $post;
-
-
 
     if (isset($post->post_parent) && $post->post_parent > 0 ) {
 
@@ -178,7 +174,7 @@ function dbdb_prev_page_link($place) {
             $prev = 'previous-step-bottom';
         }
 
-        $output .= '<div class="previous-step"><a href="' . get_page_link($prev_page_id) . '" class="button ' . $prev . '"> &lt; Previous</a></div>';
+        $output .= '<div class="previous-step"><i class="fa fa-angle-left"></i><a href="' . get_page_link($prev_page_id) . '" class="button ' . $prev . '">Previous</a></div>';
 
 
 
@@ -210,8 +206,6 @@ function dbdb_next_page_link($place) {
 
     $next_page_id = relative_value_array($child_id_array, $post->ID, 1);
 
-
-
     $output = '';
 
     if ($place == 'top') {
@@ -223,22 +217,13 @@ function dbdb_next_page_link($place) {
 
 
     if( '' != $next_page_id ) {
-
-        $output .= '<div class="next-step"><a href="' . get_page_link($next_page_id) . '" class="button ' . $next . '">Next Step &gt;</a></div>';
-
+        $output .= '<div class="next-step"><a href="' . get_page_link($next_page_id) . '" class="button ' . $next . '">Next Step <i class="da fa-chevron-right"></i></a></div>';
     } else { 
-
-		$output .='<div class="next-step"><a href="/request-franchise-information" class="button ' . $next . '">Next Step &gt;</a></div>';
-
+		$output .='<div class="next-step"><a href="/request-franchise-information" class="button ' . $next . '">Next Step <i class="da fa-chevron-right"></i></a></div>';
 	}
-
-
-
     return $output;
-
-    };
-
-};
+    }
+}
 
 
 

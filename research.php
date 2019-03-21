@@ -15,7 +15,9 @@
 </section>
 <article class="page-wrapper group">
 	<div class="content">
-    <div class="group bottom-nav" id="learn_more_link"><?php echo dbdb_prev_page_link(); ?><?php echo dbdb_next_page_link(); ?></div>
+    <div class="group bottom-nav" id="learn_more_link">
+        <?php echo dbdb_prev_page_link(); ?><?php echo dbdb_next_page_link(); ?>
+    </div>
 
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 

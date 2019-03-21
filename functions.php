@@ -161,9 +161,7 @@ add_action('wp_head', 'wpfme_IEhtml5_shim');
  * Load Font Awesome
  */
 function load_FontAwsome() {
-
 	wp_enqueue_style( 'nsfs_fran-fa-1', '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
-
 }
 add_action( 'wp_enqueue_scripts', 'load_FontAwsome' );
 

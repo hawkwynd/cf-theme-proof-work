@@ -1,0 +1,141 @@
+
+/*  FOOTER   */
+
+footer {
+  background: #464646;
+  color: #fff;
+  padding: 30px 0 0;
+  position: relative;
+  .footer-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 30px;
+    .widget-container {
+      ul {
+        margin: 10px 0 10px 5px;
+      }
+      a {
+        font-size: 15px;
+        text-decoration: none;
+        color: #fff;
+        padding: 2px;
+        word-spacing: 3px;
+        &:hover {
+          background-color: #a9a9a9;
+        }
+      }
+    }
+  }
+  .simple-social-icons {
+    position: absolute;
+    left: 0;
+    top: 190px;
+    font-size: 18px;
+  }
+  .footer-wrap .footer-title {
+    text-transform: uppercase;
+    font-family: "Helvetica-Bold";
+    font-size: 24px;
+    color: #527082;
+    letter-spacing: 3px;
+  }
+  .footer-bottom {
+    padding: 20px 40px;
+    background-color: #465057;
+  }
+  .footer-wrap .widget-container ul li {
+    padding: 0;
+  }
+}
+
+.footer-wrap {
+  ul {
+    padding: 0 1em;
+    list-style: none;
+  }
+  li:before {
+    content: "";
+    border-color: transparent #475c6d;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -0.7em;
+    top: 1.1em;
+    position: relative;
+  }
+  h2 {
+    color: #527082;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Helvetica-Bold";
+    word-spacing: 3px;
+    letter-spacing: 3px;
+  }
+}
+
+.footer-phone {
+  text-align: center;
+  background-color: #527082;
+  padding: 10px 0;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+  width: auto;
+  margin: 11px 20px 50px;
+  i.fa.fa-phone {
+    color: white;
+  }
+}
+
+footer .footer-wrap .widget-container {
+  width: 32%;
+  padding: 0 25px;
+  img {
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+}
+
+.copyrite {
+  font-family: "Helvetica-Bold";
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  a {
+    font-family: "Helvetica-Bold";
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    &.bluetel {
+      color: #527082;
+      text-decoration: none;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.disclaimer {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  padding: 20px 0;
+  text-transform: none;
+  text-align: center;
+  margin: 0 110px;
+}

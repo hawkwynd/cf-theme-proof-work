@@ -44,7 +44,7 @@
             <p>Nulla lectus augue, vulputate quis elit id, iaculis auctor sem. Vivamus porta diam libero, a rutrum ligula. </p>
 
             <div class="learn_more_link">
-                <a href="#">Learn More</a>
+                <a href="#">Learn More</a><i class="fa fa-angle-right"></i>
             </div>
 
         </div>
@@ -56,7 +56,7 @@
             <p>Nulla lectus augue, vulputate quis elit id, iaculis auctor sem. Vivamus porta diam libero, a rutrum ligula. </p>
 
             <div class="learn_more_link">
-                <a href="#">Learn More</a>
+                <a href="#">Learn More</a><i class="fa fa-angle-right"></i>
             </div>
 
         </div>
@@ -67,7 +67,7 @@
             <p>Nulla lectus augue, vulputate quis elit id, iaculis auctor sem. Vivamus porta diam libero, a rutrum ligula. </p>
 
             <div class="learn_more_link">
-                <a href="#">Learn More</a>
+                <a href="#">Learn More</a><i class="fa fa-angle-right"></i>
             </div>
 
         </div>
@@ -78,7 +78,7 @@
             <p>Nulla lectus augue, vulputate quis elit id, iaculis auctor sem. Vivamus porta diam libero, a rutrum ligula.  </p>
 
             <div class="learn_more_link">
-                <a href="#">Learn More</a>
+                <a href="#">Learn More</a><i class="fa fa-angle-right"></i>
             </div>
 
         </div>
@@ -98,10 +98,10 @@
               </article>
             <div class="video-container">
 
-                <div style="position: static; clear: both; width: 800px; height: 400px;">
-                    <div style="position: relative">
-                        <img id="vidimg" width="800px" height="400px" src="/wp-content/themes/brandjo/img/CF-Video-Thumbnail-youtube.jpg" style="position: absolute; top: 0; left: 0; cursor: pointer; pointer-events: none; z-index: 2;" />
-                        <iframe id="unlocked-video" style="position: absolute; top: 0; left: 0; z-index: 1;" src="https://www.youtube.com/embed/PT0aszT5ZT4" width="800" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                <div class="video-image-container">
+                    <div style="position: relative;">
+                        <img id="video-image" src="/wp-content/themes/brandjo/img/video-overlay.png" />
+                        <iframe id="unlocked-video" src="https://www.youtube.com/embed/PT0aszT5ZT4" width="800" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                     </div>
                 </div>
                 <script type="application/javascript">
@@ -109,7 +109,7 @@
                     var monitor = setInterval(function(){
                         var elem = document.activeElement;
                         if(elem && elem.id == 'unlocked-video'){
-                            document.getElementById('vidimg').style.display='none';
+                            document.getElementById('video-image').style.display='none';
                             clearInterval(monitor);
                         }
                     }, 100);
@@ -122,16 +122,15 @@
 <!--// END Invest In A Closet Factory Franchise -->
 
 <!-- Banner -->
-<section class="section-wrapper" id="talk-banner" >
 <div class="talk-banner">
     <h2>Talk to us about franchising with closet factory  <span><a href="tel:555-555-5555">call 555-555-5555</a></span></h2>
 </div>
-</section>
 
 <!--// banner -->
 
 <!-- // What does it cost -->
-<section class="section-wrapper">
+<section class="section-wrapper" id="cost-section">
+
     <div class="dual-wrapper">
     <div class="left-block">
         <h2>What does it cost to own a closet factory franchise?</h2>
@@ -145,12 +144,12 @@
         </ul>
     <br/>
         <div class="learn_more_link">
-            <a href="#">Learn More</a>
+            <a href="#">Learn More </a><i class="fa fa-angle-right"></i>
         </div>
 
     </div>
     <div class="right-block">
-        <img src="/wp-content/themes/brandjo/img/CF-Infographic.png"/>
+        <img src="/wp-content/themes/brandjo/img/Infographic.png"/>
     </div>
    </div>
 </section>
@@ -216,7 +215,7 @@
 				</div>
                 <!-- learn more button -->
 
-                <div class="learn_more_link"><a href="<?php the_permalink()?>">Learn More</a></div>
+                <div class="learn_more_link"><a href="<?php the_permalink()?>">Learn More</a><i class="fa fa-angle-right"></i></div>
 
 			</div>
 			<?php }
